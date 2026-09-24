@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-23T00:32:27 EEST" name="Contact Automation Tests" finished-at="2026-09-23T00:32:56 EEST" duration-ms="29429">
+    <groups>
+    </groups>
+    <test started-at="2026-09-23T00:32:27 EEST" name="Create Contact Test" finished-at="2026-09-23T00:32:56 EEST" duration-ms="29429">
+      <class name="tests.CreateContactTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CreateContactTest@5acf93bb]" started-at="2026-09-23T00:32:27 EEST" name="setUp" finished-at="2026-09-23T00:32:34 EEST" duration-ms="7903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateContact()[pri:0, instance:tests.CreateContactTest@5acf93bb]" started-at="2026-09-23T00:32:34 EEST" name="testCreateContact" description="Create contact with all fields" finished-at="2026-09-23T00:32:56 EEST" duration-ms="21033" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: com.google.android.contacts:id/floating_action_button (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.9', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.android.contacts.activi..., appium:appPackage: com.google.android.contacts, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.contacts.activi..., appPackage: com.google.android.contacts, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: 2A151FDH300BSV, newCommandTimeout: 300, noReset: true, platformName: ANDROID, platformVersion: 16, udid: 2A151FDH300BSV}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7 Pro, appium:deviceName: 2A151FDH300BSV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 2A151FDH300BSV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 106, appium:takesScreenshot: true, appium:udid: 2A151FDH300BSV, appium:viewportRect: {height: 2234, left: 0, top: 106, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b5f2c74d-2705-4a7a-a96f-afa9bf335ddb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.google.android.contacts:id/floating_action_button (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.9', java.version: '17.0.12'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.android.contacts.activi..., appium:appPackage: com.google.android.contacts, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.contacts.activi..., appPackage: com.google.android.contacts, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: 2A151FDH300BSV, newCommandTimeout: 300, noReset: true, platformName: ANDROID, platformVersion: 16, udid: 2A151FDH300BSV}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 7 Pro, appium:deviceName: 2A151FDH300BSV, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 2A151FDH300BSV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 106, appium:takesScreenshot: true, appium:udid: 2A151FDH300BSV, appium:viewportRect: {height: 2234, left: 0, top: 106, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b5f2c74d-2705-4a7a-a96f-afa9bf335ddb
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at pages.BasePage.click(BasePage.java:32)
+at pages.AddContactPage.clickAddContactButton(AddContactPage.java:33)
+at pages.AddContactPage.openCreateContactForm(AddContactPage.java:37)
+at tests.CreateContactTest.testCreateContact(CreateContactTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContact -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CreateContactTest@5acf93bb]" started-at="2026-09-23T00:32:56 EEST" name="tearDown" finished-at="2026-09-23T00:32:56 EEST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CreateContactTest -->
+    </test> <!-- Create Contact Test -->
+  </suite> <!-- Contact Automation Tests -->
+</testng-results>

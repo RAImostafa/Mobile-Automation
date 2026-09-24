@@ -1,0 +1,11 @@
+org/example/Main.class
+org/example/base/BasePage.class
+org/example/base/DriverManager.class
+org/example/config/Configuration.class
+org/example/pages/AddContactPage.class
+pages/AddContactPage.class
+driver/DriverManager.class
+org/example/pages/ContactsListPage.class
+pages/BasePage.class
+org/example/utils/TestDataReader.class
+utils/TestDataReader.class

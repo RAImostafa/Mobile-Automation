@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Contact Automation Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Create Contact Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.CreateContactTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testCreateContact"/>
+        </methods>
+      </class> <!-- tests.CreateContactTest -->
+    </classes>
+  </test> <!-- Create Contact Test(failed) -->
+</suite> <!-- Failed suite [Contact Automation Tests] -->
